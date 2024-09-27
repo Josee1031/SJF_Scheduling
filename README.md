@@ -40,25 +40,25 @@ pip install psutil
    - Open a terminal and navigate to the directory where `cluster.py` is located.
    - Run the cluster server using the following command:
    ```bash
-   python cluster.py <server_port>
+   python3 cluster.py <server_port>
    ```
    - Replace `<server_port>` with an available port number (e.g., `65432`).
    - Example:
    ```bash
-   python cluster.py 65432
+   python3 cluster.py 65432
    ```
 
 2. **Run the Embedded Device (Producer Node)**:
    - Open a separate terminal and navigate to the directory where `edevice.py` is located.
    - Run the embedded device using the following command:
    ```bash
-   python edevice.py <server_ip> <server_port>
+   python3 edevice.py <server_ip> <server_port>
    ```
    - Replace `<server_ip>` with the IP address of the machine running the cluster server. If the cluster is running on the same machine, use `127.0.0.1` (localhost).
    - Replace `<server_port>` with the port number used when running `cluster.py`.
    - Example:
    ```bash
-   python edevice.py 127.0.0.1 65432
+   python3 edevice.py 127.0.0.1 65432
    ```
 
 3. **Behavior**:
@@ -75,13 +75,13 @@ In the bonus implementation, the embedded device waits for an acknowledgment fro
 1. **Run the Cluster Server (Cluster Node)**:
    - Open a terminal and run the cluster server as described above:
    ```bash
-   python cluster.py <server_port>
+   python3 cluster.py <server_port>
    ```
 
 2. **Run the Embedded Device (Producer Node)**:
    - Run the embedded device with the same command:
    ```bash
-   python edevice.py <server_ip> <server_port>
+   python3 edevice.py <server_ip> <server_port>
    ```
 
 3. **Behavior**:
